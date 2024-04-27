@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WebWise Consulting</title>
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- CSS file -->
+  <link rel="stylesheet" href="styles.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const servicesList = document.getElementById('servicesList');
+      data = [
+        {
+          "title": "Web Design",
+          "description": "Vivamus eu scelerisque mi, quis sodales lectus. Nunc vulputate massa sit amet sapien accumsan imperdiet. Nulla in ipsum et sem porttitor tristique vitae nec mauris."
+        },
+        {
+          "title": "Web Development",
+          "description": "Vivamus eu scelerisque mi, quis sodales lectus. Nunc vulputate massa sit amet sapien accumsan imperdiet. Nulla in ipsum et sem porttitor tristique vitae nec mauris."
+        },
+        {
+          "title": "SEO & Marketing",
+          "description": "Vivamus eu scelerisque mi, quis sodales lectus. Nunc vulputate massa sit amet sapien accumsan imperdiet. Nulla in ipsum et sem porttitor tristique vitae nec mauris."
+        }
+      ]
+
+      data.forEach(service => {
+        const serviceCard = document.createElement('div');
+        serviceCard.classList.add('col-lg-4', 'mb-4');
+        serviceCard.innerHTML = `
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">${service.title}</h5>
+                  <p class="card-text">${service.description}</p>
+                </div>
+              </div>
+            `;
+        servicesList.appendChild(serviceCard);
+      });
+
+    })
+  </script>
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">WebWise Consulting</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section id="home" class="section">
+    <div class="container">
+      <h1>Welcome to WebWise Consulting</h1>
+      <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse porta vestibulum magna vitae
+        tempor. Maecenas ultricies metus id arcu imperdiet consectetur. Pellentesque habitant morbi tristique senectus
+        et netus et malesuada fames ac turpis egestas. Vivamus rutrum quam diam, eu cursus diam mollis ut. Vivamus nibh
+        ligula, porta quis elementum et, rhoncus et massa. Nullam in erat vitae eros consequat sollicitudin in a lectus.
+        Nullam vel tellus scelerisque, scelerisque enim non, ullamcorper quam. In lobortis mollis laoreet. Vivamus
+        congue mi elit, vel euismod dolor semper non. Donec ultricies, ligula a congue placerat, urna erat vulputate
+        felis, eu commodo ligula ipsum sed ante. Aenean magna tellus, egestas vitae dolor eu, tincidunt maximus nisl.
+        Maecenas rutrum tortor vitae erat tincidunt bibendum. Maecenas quis luctus lectus, sed hendrerit dui. Quisque
+        porttitor tincidunt mi sit amet pretium. Nulla risus ex, convallis dignissim condimentum sed, tempor sed massa.
+      </p>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>Proin odio est, ullamcorper ut porta eget, viverra volutpat est. Vivamus eu scelerisque mi, quis sodales
+        lectus. Nunc vulputate massa sit amet sapien accumsan imperdiet. Nulla in ipsum et sem porttitor tristique vitae
+        nec mauris. Nam eget fermentum diam, aliquam bibendum turpis. Donec egestas aliquet tellus, vitae ultricies
+        libero feugiat quis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
+        egestas. Vivamus et aliquam massa, at semper augue.</p>
+    </div>
+  </section>
+
+  <section id="services" class="section">
+    <div class="container">
+      <h2>Our Services</h2>
+
+      <!-- `JSON` parsing -->
+      <div class="row" id="servicesList">
+      </div>
+  </section>
+
+  <section id="portfolio" class="section">
+    <div class="container">
+      <h2>Portfolio</h2>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Portfolio Item">
+            <div class="card-body">
+              <h5 class="card-title">Project Title</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Portfolio Item">
+            <div class="card-body">
+              <h5 class="card-title">Project Title</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Portfolio Item">
+            <div class="card-body">
+              <h5 class="card-title">Project Title</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <div class="row">
+        <div class="col-md-6 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Send us a message</h5>
+              <form>
+                <div class="form-group">
+                  <label for="name">Your Name</label>
+                  <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                  <label for="email">Your Email</label>
+                  <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                  <label for="message">Message</label>
+                  <textarea class="form-control" id="message" rows="3" placeholder="Enter your message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Contact Information</h5>
+              <p class="card-text">Email: info@webwise.com</p>
+              <p class="card-text">Phone: +1 (123) 456-7890</p>
+              <p class="card-text">Address: 123 WebWise Street, City, Country</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container text-center">
+      <p>made with ❤️ </p>
+      <p>&copy; 2024 WebWise Consulting</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,70 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WebWise Consulting</title>
+  <title>McDonald's Showcase</title>
   <!-- Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
   <!-- CSS file -->
   <link rel="stylesheet" href="styles.css">
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      const servicesList = document.getElementById('servicesList');
-      data = [
-        {
-          "title": "Web Design",
-          "description": "Vivamus eu scelerisque mi, quis sodales lectus. Nunc vulputate massa sit amet sapien accumsan imperdiet. Nulla in ipsum et sem porttitor tristique vitae nec mauris."
-        },
-        {
-          "title": "Web Development",
-          "description": "Vivamus eu scelerisque mi, quis sodales lectus. Nunc vulputate massa sit amet sapien accumsan imperdiet. Nulla in ipsum et sem porttitor tristique vitae nec mauris."
-        },
-        {
-          "title": "SEO & Marketing",
-          "description": "Vivamus eu scelerisque mi, quis sodales lectus. Nunc vulputate massa sit amet sapien accumsan imperdiet. Nulla in ipsum et sem porttitor tristique vitae nec mauris."
-        }
-      ]
-
-      data.forEach(service => {
-        const serviceCard = document.createElement('div');
-        serviceCard.classList.add('col-lg-4', 'mb-4');
-        serviceCard.innerHTML = `
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">${service.title}</h5>
-                  <p class="card-text">${service.description}</p>
-                </div>
-              </div>
-            `;
-        servicesList.appendChild(serviceCard);
-      });
-
-    })
-  </script>
-
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-red">
     <div class="container">
-      <a class="navbar-brand" href="#">WebWise Consulting</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <a class="navbar-brand" href="#">McDonald's</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
+          <li class="nav-item active">
             <a class="nav-link" href="#home">Home</a>
           </li>
           <li class="nav-item">
@@ -74,7 +34,7 @@
             <a class="nav-link" href="#services">Services</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#portfolio">Portfolio</a>
+            <a class="nav-link" href="#portfolio">Promotions</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#contact">Contact</a>
@@ -86,68 +46,55 @@
 
   <section id="home" class="section">
     <div class="container">
-      <h1>Welcome to WebWise Consulting</h1>
-      <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse porta vestibulum magna vitae
-        tempor. Maecenas ultricies metus id arcu imperdiet consectetur. Pellentesque habitant morbi tristique senectus
-        et netus et malesuada fames ac turpis egestas. Vivamus rutrum quam diam, eu cursus diam mollis ut. Vivamus nibh
-        ligula, porta quis elementum et, rhoncus et massa. Nullam in erat vitae eros consequat sollicitudin in a lectus.
-        Nullam vel tellus scelerisque, scelerisque enim non, ullamcorper quam. In lobortis mollis laoreet. Vivamus
-        congue mi elit, vel euismod dolor semper non. Donec ultricies, ligula a congue placerat, urna erat vulputate
-        felis, eu commodo ligula ipsum sed ante. Aenean magna tellus, egestas vitae dolor eu, tincidunt maximus nisl.
-        Maecenas rutrum tortor vitae erat tincidunt bibendum. Maecenas quis luctus lectus, sed hendrerit dui. Quisque
-        porttitor tincidunt mi sit amet pretium. Nulla risus ex, convallis dignissim condimentum sed, tempor sed massa.
-      </p>
+      <h1>Welcome to McDonald's</h1>
+      <p class="lead">Explore our latest promotions and find out what's new at your local McDonald's! Enjoy our Big Mac, discover the McFlurry flavors or try our world-famous fries.</p>
     </div>
   </section>
 
   <section id="about" class="section">
     <div class="container">
-      <h2>About Us</h2>
-      <p>Proin odio est, ullamcorper ut porta eget, viverra volutpat est. Vivamus eu scelerisque mi, quis sodales
-        lectus. Nunc vulputate massa sit amet sapien accumsan imperdiet. Nulla in ipsum et sem porttitor tristique vitae
-        nec mauris. Nam eget fermentum diam, aliquam bibendum turpis. Donec egestas aliquet tellus, vitae ultricies
-        libero feugiat quis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
-        egestas. Vivamus et aliquam massa, at semper augue.</p>
+      <h2>About McDonald's</h2>
+      <p>Founded in 1940, McDonald's is now the world's largest restaurant chain by revenue, serving over 69 million customers daily in over 100 countries. Our mission is to provide quick, affordable, and delicious food in a family-friendly environment.</p>
     </div>
   </section>
 
   <section id="services" class="section">
     <div class="container">
       <h2>Our Services</h2>
-
-      <!-- `JSON` parsing -->
       <div class="row" id="servicesList">
+        <!-- This content will be filled by the script with McDonald's specific services -->
       </div>
+    </div>
   </section>
 
   <section id="portfolio" class="section">
     <div class="container">
-      <h2>Portfolio</h2>
+      <h2>Promotions</h2>
       <div class="row">
         <div class="col-md-4 mb-4">
           <div class="card">
-            <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Portfolio Item">
+            <img src="images/seasonal_special.jpg" class="card-img-top" alt="Featured Promotion">
             <div class="card-body">
-              <h5 class="card-title">Project Title</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <h5 class="card-title">Seasonal Specials</h5>
+              <p class="card-text">Discover our seasonal specials like the WcDonald's Sauce available for a limited time.</p>
             </div>
           </div>
         </div>
         <div class="col-md-4 mb-4">
           <div class="card">
-            <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Portfolio Item">
+            <img src="images/new_menu_item.png" class="card-img-top" alt="New Menu Item">
             <div class="card-body">
-              <h5 class="card-title">Project Title</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <h5 class="card-title">Limited Time Deals</h5>
+              <p class="card-text">Mix and match any select Buy One Get One Free items today until the end of the month.</p>
             </div>
           </div>
         </div>
         <div class="col-md-4 mb-4">
           <div class="card">
-            <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Portfolio Item">
+            <img src="images/app_deal.jpg" class="card-img-top" alt="App Exclusive Deal">
             <div class="card-body">
-              <h5 class="card-title">Project Title</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <h5 class="card-title">App Exclusive Deals</h5>
+              <p class="card-text">Download our app to get exclusive deals and earn rewards with every purchase.</p>
             </div>
           </div>
         </div>
@@ -185,9 +132,9 @@
           <div class="card">
             <div class="card-body">
               <h5 class="card-title">Contact Information</h5>
-              <p class="card-text">Email: info@webwise.com</p>
-              <p class="card-text">Phone: +1 (123) 456-7890</p>
-              <p class="card-text">Address: 123 WebWise Street, City, Country</p>
+              <p class="card-text">Email: contact@mcdonalds.com</p>
+              <p class="card-text">Phone: +1 (800) 244-6227</p>
+              <p class="card-text">Address: 1 McDonald's Plaza, Oak Brook, IL 60523</p>
             </div>
           </div>
         </div>
@@ -197,8 +144,7 @@
 
   <footer class="footer">
     <div class="container text-center">
-      <p>made with ❤️ </p>
-      <p>&copy; 2024 WebWise Consulting</p>
+      <p>© 2024 McDonald's Corporation</p>
     </div>
   </footer>
 
@@ -207,5 +153,4 @@
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
-
 </html>

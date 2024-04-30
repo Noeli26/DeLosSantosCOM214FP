@@ -1,141 +1,67 @@
 body {
   font-family: Roboto, sans-serif;
-  background-color: #f5f5f5;
-  /* Very Light Grey */
-  color: #333333;
-  /* Dark Grey */
+  background-color: #fff; /* White for a cleaner look */
+  color: #333; /* Dark Grey */
 }
 
 .navbar {
-  background-color: #34495e;
-  /* Dark Blue Grey */
-  color: #ffffff;
-  /* White */
+  background-color: #d50000; /* McDonald's red */
+  color: #fff; /* White */
 }
 
 .navbar-brand,
 .navbar-nav .nav-link {
-  color: #ffffff;
-  /* White */
+  color: #fff; /* White */
 }
 
 .section {
   padding: 100px 0;
-  background-color: #ffffff;
-  /* White */
-  color: #333333;
-  /* Dark Grey */
+  background-color: #ffcc00; /* McDonald's yellow for sections */
+  color: #333; /* Dark Grey */
 }
 
 .card {
   border: none;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .card-title {
   font-size: 24px;
   font-weight: bold;
-  color: #333333;
-  /* Dark Grey */
+  color: #333; /* Dark Grey */
 }
 
 .card-text {
   font-size: 18px;
-  color: #666666;
-  /* Medium Grey */
+  color: #666; /* Medium Grey */
 }
 
 .btn-primary {
-  background-color: #2ecc71;
-  /* Emerald Green */
-  color: #ffffff;
-  /* White */
+  background-color: #d50000; /* McDonald's red */
+  color: #fff; /* White */
   border: none;
 }
 
 .btn-primary:hover {
-  background-color: #27ae60;
-  /* Darker Emerald Green */
+  background-color: #bb0000; /* Darker red */
 }
 
 .footer {
-  background-color: #34495e;
-  /* Dark Blue Grey */
-  color: #ffffff;
-  /* White */
+  background-color: #34495e; /* Dark Blue Grey retained for footer */
+  color: #fff; /* White */
   padding: 20px 0;
 }
 
-
-/* Font */
-.roboto-thin {
-  font-family: "Roboto", sans-serif;
-  font-weight: 100;
-  font-style: normal;
-}
-
-.roboto-light {
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  font-style: normal;
-}
-
-.roboto-regular {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.roboto-medium {
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-}
-
-.roboto-bold {
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
-.roboto-black {
-  font-family: "Roboto", sans-serif;
-  font-weight: 900;
-  font-style: normal;
-}
-
-.roboto-thin-italic {
-  font-family: "Roboto", sans-serif;
-  font-weight: 100;
-  font-style: italic;
-}
-
-.roboto-light-italic {
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  font-style: italic;
-}
-
-.roboto-regular-italic {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-style: italic;
-}
-
-.roboto-medium-italic {
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-style: italic;
-}
-
-.roboto-bold-italic {
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  font-style: italic;
-}
-
-.roboto-black-italic {
-  font-family: "Roboto", sans-serif;
-  font-weight: 900;
-  font-style: italic;
-}
+/* Font styles retained as provided for consistency */
+.roboto-thin { font-weight: 100; font-style: normal; }
+.roboto-light { font-weight: 300; font-style: normal; }
+.roboto-regular { font-weight: 400; font-style: normal; }
+.roboto-medium { font-weight: 500; font-style: normal; }
+.roboto-bold { font-weight: 700; font-style: normal; }
+.roboto-black { font-weight: 900; font-style: normal; }
+.roboto-thin-italic { font-weight: 100; font-style: italic; }
+.roboto-light-italic { font-weight: 300; font-style: italic; }
+.roboto-regular-italic { font-weight: 400; font-style: italic; }
+.roboto-medium-italic { font-weight: 500; font-style: italic; }
+.roboto-bold-italic { font-weight: 700; font-style: italic; }
+.roboto-black-italic { font-weight: 900; font-style: italic; }

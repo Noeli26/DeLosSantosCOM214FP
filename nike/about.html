@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nike - About</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #fff;
+            background-color: #000;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #000;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+
+        section#about {
+            background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black */
+            padding: 50px;
+            border-radius: 10px;
+            margin: 0 auto;
+            max-width: 800px;
+            text-align: left; /* Align content to the left */
+        }
+
+        section#about h2 {
+            color: #fff;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        #dynamic-word {
+            font-size: 36px;
+            vertical-align: middle;
+        }
+
+        #serve {
+            font-size: 36px;
+            vertical-align: middle;
+        }
+
+        footer {
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Nike</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="about">
+            <p><span id="serve">We Serve </span> <span id="dynamic-word">People</span>.</p>
+        </section>
+        <section id="about-nike"> <h2>About Nike, Inc.</h2> <p>Nike, Inc. is an American athletic footwear and apparel corporation headquartered near Beaverton, Oregon, United States. It is the world's largest supplier of athletic shoes and apparel and a major manufacturer of sports equipment, with revenue in excess of US$46 billion in its fiscal year 2022.</p> </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Nike. All rights reserved.</p>
+    </footer>
+
+    <script>
+        window.onload = function() {
+            var dynamicWords = [' Family', ' Friends', ' Men', ' Women', ' Kids', ' Athletics'];
+            var index = 0;
+            var dynamicWord = document.getElementById('dynamic-word');
+
+            setInterval(function() {
+                dynamicWord.textContent = dynamicWords[index];
+                index = (index + 1) % dynamicWords.length;
+            }, 2000);
+        };
+    </script>
+</body>
+</html>

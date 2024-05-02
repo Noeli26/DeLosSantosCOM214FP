@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nike - Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #000;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        main {
+            height: 100vh;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .bg-slideshow {
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: url('logo1.png') center/cover no-repeat;
+            animation: slideshow 15s infinite;
+        }
+
+        @keyframes slideshow {
+            0% { background-image: url('logo1.png'); }
+            25% { background-image: url('logo2.png'); }
+            50% { background-image: url('logo3.png'); }
+            75% { background-image: url('logo4.png'); }
+            100% { background-image: url('logo1.png'); }
+        }
+
+        .content {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            padding-top: 50px;
+        }
+
+        footer {
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Nike</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="content">
+            <h2>Welcome to Nike</h2>
+            <p>Discover the latest trends in athletic footwear and apparel.</p>
+        </div>
+        </nav>
+    </header>
+    
+    <main> 
+        
+        <div class="bg-slideshow"></div>
+       
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Nike. All rights reserved.</p>
+    </footer>
+</body>
+</html>

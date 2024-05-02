@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nike - Products</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #000;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+
+        section#products {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 0 auto;
+            max-width: 1000px;
+        }
+
+        section#products h2 {
+            color: #000;
+            text-align: center;
+        }
+
+        .product {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .product-item {
+            width: 300px;
+            margin: 10px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .product-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .product-item img {
+            width: 100%;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .product-item .product-info {
+            padding: 15px;
+        }
+
+        .product-item h3 {
+            margin: 10px 0;
+            font-size: 18px;
+        }
+
+        .product-item p {
+            margin: 10px 0;
+            font-size: 14px;
+        }
+
+        footer {
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Nike</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="products">
+            <h2>Products</h2>
+            <div class="product">
+                <div class="product-item">
+                    <img src="nikeShoe.png" alt="Nike Air Max">
+                    <div class="product-info">
+                        <h3>Nike Air Max</h3>
+                        <p>Description of Nike Air Max.</p>
+                        <p>$99.99</p>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <img src="nikeShoe.png" alt="Nike Dri-FIT T-Shirt">
+                    <div class="product-info">
+                        <h3>Nike Dri-FIT T-Shirt</h3>
+                        <p>Description of Nike Dri-FIT T-Shirt.</p>
+                        <p>$29.99</p>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <img src="nikeShoe.png" alt="Nike Elite Basketball">
+                    <div class="product-info">
+                        <h3>Nike Elite Basketball</h3>
+                        <p>Description of Nike Elite Basketball.</p>
+                        <p>$39.99</p>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <img src="nikeShoe.png" alt="Nike React Infinity Run Flyknit">
+                    <div class="product-info">
+                        <h3>Nike React Infinity Run Flyknit</h3>
+                        <p>Description of Nike React Infinity Run Flyknit.</p>
+                        <p>$149.99</p>
+                    </div>
+                </div>
+                <!-- Add the rest of the products here -->
+                <div class="product-item">
+                    <img src="nikeShoe.png" alt="Nike Air Zoom Pegasus 38">
+                    <div class="product-info">
+                        <h3>Nike Air Zoom Pegasus 38</h3>
+                        <p>Description of Nike Air Zoom Pegasus 38.</p>
+                        <p>$129.99</p>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <img src="nikeShoe.png" alt="Nike Sportswear Club Fleece Hoodie">
+                    <div class="product-info">
+                        <h3>Nike Sportswear Club Fleece Hoodie</h3>
+                        <p>Description of Nike Sportswear Club Fleece Hoodie.</p>
+                        <p>$69.99</p>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <img src="nikeShoe.png" alt="Nike Air Force 1">
+                    <div class="product-info">
+                        <h3>Nike Air Force 1</h3>
+                        <p>Description of Nike Air Force 1.</p>
+                        <p>$89.99</p>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <img src="nikeShoe.png" alt="NikeCourt Air Zoom Vapor Cage 4">
+                    <div class="product-info">
+                        <h3>NikeCourt Air Zoom Vapor Cage 4</h3>
+                        <p>Description of NikeCourt Air Zoom Vapor Cage 4.</p>
+                        <p>$149.99</p>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <img src="nikeShoe.png" alt="Nike Air Max">
+                    <div class="product-info">
+                        <h3>Nike Air Max</h3>
+                        <p>Description of Nike Air Max.</p>
+                        <p>$149.99</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Nike. All rights reserved.</p>
+    </footer>
+</body>
+</html>
